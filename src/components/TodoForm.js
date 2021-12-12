@@ -7,7 +7,7 @@ function TodoForm(props) {
     e.preventDefault();
 
     props.addTodo({
-      id: new Date(),
+      id: Math.floor(Math.random() * 10000),
       text: input,
     });
 
